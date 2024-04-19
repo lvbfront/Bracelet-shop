@@ -3,30 +3,39 @@ import ekka from './ekkako.png'
 
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
-
+export{
+    Logo,
+    ekka
+}
 
 export const products = [
     {
+        id: 1,
         imgURL: shoe4,
-        name: "Nike Air Jordan-01",
+        name: "سلسلة ذهبية",
         price: "$200.20",
+        description: "varyyyyyyyyyy"
     },
     {
+        id: 2,
         imgURL: shoe5,
-        name: "Nike Air Jordan-10",
+        name: "اسورة فضية",
         price: "$210.20",
     },
     {
+        id: 3,
         imgURL: shoe6,
         name: "Nike Air Jordan-100",
         price: "$220.20",
     },
     {
+        id: 4,
         imgURL: shoe7,
         name: "Nike Air Jordan-001",
         price: "$230.20",
     },
     {
+        id: 5,
         imgURL : Logo,
         name : "the logo",
         price : "$333",

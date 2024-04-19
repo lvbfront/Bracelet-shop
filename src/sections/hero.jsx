@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import {arrowRight} from '../components/assets/icons'
-import { bigShoe1 } from "../components/assets/images";
+import {ekka} from '../components/assets/Data'
 
 import { shoes} from "../components/assets/Data";
 
@@ -33,7 +33,7 @@ const Hero = () => {
 
         <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
         <img
-          src={bigShoe1}
+          src={ekka}
           alt='shoe colletion'
           width={610}
           height={502}
