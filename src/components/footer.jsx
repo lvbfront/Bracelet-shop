@@ -1,39 +1,45 @@
-import React from 'react';
+import React from "react";
+import ItemsContainer from "./ItemsContainer";
+import SocialIcons from './socialIcons'
+import { Icons } from './assets/menu';
 
-function Footer() {
-
-
-
-    return (
-        <footer className="bg-slate-800 text-white p-4 mt-8">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-                <div className="mb-2 md:mb-0">
-                    <p className="text-center md:text-left font-semibold">Company Name</p>
-                </div>
-                <div className="flex justify-center space-x-4">
-                    <a href="/about" className="hover:text-gray-300">About Us</a>
-                    <a href="/services" className="hover:text-gray-300">Services</a>
-                    <a href="/contact" className="hover:text-gray-300">Contact</a>
-                </div>
-                <div className="flex justify-center space-x-4">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <img src="path_to_facebook_icon" alt="Facebook" />
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <img src="path_to_twitter_icon" alt="Twitter" />
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <img src="path_to_instagram_icon" alt="Instagram" />
-                    </a>
-                </div>
-                <div className="mt-2 md:mt-0">
-                    <p className="text-center md:text-right text-xs">
-                        © {new Date().getFullYear()} Company Name. All rights reserved.
-                    </p>
-                </div>
-            </div>
-        </footer>
-    );
-}
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-white">
+      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
+        <h1
+          className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
+         md:w-2/5"
+        >
+          <span className="text-teal-400">Free</span> until you're ready to
+          launch
+        </h1>
+        <div>
+          <input
+            type="text"
+            placeholder="Enter Your ph.no"
+            className="text-gray-800
+           sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
+          />
+          <button
+            className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins]
+           rounded-md text-white md:w-auto w-full"
+          >
+            Request Code
+          </button>
+        </div>
+      </div>
+      <ItemsContainer />
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
+      text-center pt-2 text-gray-400 text-sm pb-8"
+      >
+        <span>© 2020 Appy. All rights reserved.</span>
+        <span>Terms · Privacy Policy</span>
+        <SocialIcons Icons={Icons} />
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
