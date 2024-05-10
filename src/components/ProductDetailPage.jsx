@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Button from './Button';
 import {arrowRight} from './assets/icons'
-
+import { Link } from 'react-router-dom';
 import {Data_product, products} from './assets/Data'
 
 function ProductDetailPage() {
@@ -26,6 +26,10 @@ function ProductDetailPage() {
         </div>
         <p>اشتري الان</p>
         <Button label="buy now!" iconURL={arrowRight} className="ml-5 pl-7"/>
+        <Link to="/products">
+            <Button label="Go Back " iconURL={arrowRight} className="ml-5 pl-7"/>
+        </Link>
+        
         </div>
 
     );
