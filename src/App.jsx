@@ -5,6 +5,7 @@ import About from './pages/about';
 import React, { useState } from 'react';
 import { Route, Routes,  } from 'react-router-dom';
 import ProductsPage from './pages/productsPage';
+import ScrollToTop from './components/ScrollToTop';
 import ProductDetailPage from './components/ProductDetailPage';
 
 
@@ -15,6 +16,7 @@ export default function App() {
 
     <>
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />

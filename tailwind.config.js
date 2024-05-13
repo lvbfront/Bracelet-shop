@@ -26,7 +26,29 @@ export default {
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
-        "white-400": "rgba(255, 255, 255, 0.80)"
+        "pearl-white": "#F0F0F0",
+        "white-400": "rgba(255, 255, 255, 0.80)",
+        'deep-purple': {
+          800: '#800080'
+        },
+        'gold': {
+          400: '#FFD700',
+          500: '#D4AF37',
+          600: '#C5A600'
+        },
+        'cream': {
+          200: '#FEF9EF'},
+          
+        'rose-gold': {
+          200: '#B76E79'
+        },
+        'silver': {
+          200: '#C0C0C0'
+        },
+        'turquoise': {
+          200: '#40E0D0'
+        },
+
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'

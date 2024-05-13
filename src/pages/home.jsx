@@ -13,15 +13,16 @@ function Home() {
   return (
     <div className='relative'>
 
-      <section className='xl:padding-1 wide:padding-r padding-b'>
+      <section className='xl:padding-1 wide:padding-r padding-b px-2'>
         <Hero/>
       </section>
 
       <section className='padding'>
         <PopularProducts />
+
       </section>
 
-      <section className='bg-black padding-x padding-t pb-8'>
+      <section className=' pb-8 px-2'>
         <Footer />
       </section>
       

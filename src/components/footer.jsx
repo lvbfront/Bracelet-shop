@@ -1,45 +1,39 @@
-import React from "react";
-import ItemsContainer from "./ItemsContainer";
-import SocialIcons from './socialIcons'
-import { Icons } from './assets/menu';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white">
-      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
-        <h1
-          className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
-         md:w-2/5"
-        >
-          <span className="text-teal-400">Free</span> until you're ready to
-          launch
-        </h1>
-        <div>
-          <input
-            type="text"
-            placeholder="Enter Your ph.no"
-            className="text-gray-800
-           sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
-          />
-          <button
-            className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins]
-           rounded-md text-white md:w-auto w-full"
-          >
-            Request Code
-          </button>
-        </div>
-      </div>
-      <ItemsContainer />
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-      text-center pt-2 text-gray-400 text-sm pb-8"
-      >
-        <span>© 2020 Appy. All rights reserved.</span>
-        <span>Terms · Privacy Policy</span>
-        <SocialIcons Icons={Icons} />
-      </div>
-    </footer>
-  );
-};
+function Footer() {
+    return (
+        <footer className="bg-turquoise-200 text-white mt-8 py-6">
+            <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                {/* Social Media Links */}
+                <div className="mb-6 md:mb-0">
+                    <h3 className="text-lg font-semibold">Follow Us</h3>
+                    <div className="flex space-x-4 mt-2">
+                        <a href="https://facebook.com" className="hover:text-rose-gold-200 transition-colors">Facebook</a>
+                        <a href="https://instagram.com" className="hover:text-rose-gold-200 transition-colors">Instagram</a>
+                        <a href="https://twitter.com" className="hover:text-rose-gold-200 transition-colors">Twitter</a>
+                    </div>
+                </div>
+
+                {/* Contact Information */}
+                <div className="mb-6 md:mb-0">
+                    <h3 className="text-lg font-semibold">Contact Us</h3>
+                    <p>Email: info@braceletstore.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+
+                {/* Other Important Links */}
+                <div className="mb-6 md:mb-0">
+                    <h3 className="text-lg font-semibold">Quick Links</h3>
+                    <ul>
+                        <li><Link to="/about" className="hover:text-rose-gold-200 transition-colors">About Us</Link></li>
+                        <li><Link to="/privacy" className="hover:text-rose-gold-200 transition-colors">Privacy Policy</Link></li>
+                        <li><Link to="/terms" className="hover:text-rose-gold-200 transition-colors">Terms of Service</Link></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    );
+}
 
 export default Footer;

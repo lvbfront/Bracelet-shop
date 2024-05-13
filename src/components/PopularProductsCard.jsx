@@ -1,7 +1,9 @@
 import React from 'react'
 import { star } from '../components/assets/icons';
+import { Link } from 'react-router-dom';
 const PopularProductsCard = ({ imgURL, name, price }) => {
     return (
+      
         <div className='flex flex-1 flex-col w-full max-sm:w-full'>
           <img src={imgURL} alt={name} className='w-[200px] h-[200px]' /> {/* Reduced image size */}
           <div className='mt-4 flex justify-start gap-2.5'> {/* Reduced gap */}
@@ -16,6 +18,7 @@ const PopularProductsCard = ({ imgURL, name, price }) => {
           <p className='mt-1 font-semibold font-montserrat text-coral-red text-lg leading-normal'> {/* Reduced font size */}
             {price}
           </p>
+          
         </div>
       );
 }
