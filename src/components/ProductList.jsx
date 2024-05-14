@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import ProductItem from './ProductItem';
 import { products as allProducts } from './assets/Data'; // Assuming all products are imported from a data file
 
-function ProductList({ showFeaturedOnly = false }) {
+function ProductList({ showFeaturedOnly = false, showNewOnly = false }) {
     const [visibleProducts, setVisibleProducts] = useState(6); // Number of products to display initially
 
-    // Filtering products based on 'isFeatured' property when 'showFeaturedOnly' is true
-    const filteredProducts = showFeaturedOnly ? allProducts.filter(product => product.isFeatured) : allProducts;
+    // Apply filtering based on the provided flags
+    let filteredProducts = allProducts;
+    if (showFeaturedOnly) {
+        filteredProducts = filteredProducts.filter(product => product.isFeatured);
+    }
+    if (showNewOnly) {
+        filteredProducts = filteredProducts.filter(product => product.isNew);
+    }
 
     const loadMoreProducts = () => {
         setVisibleProducts(prevVisibleProducts => prevVisibleProducts + 6); // Load 6 more products
@@ -23,12 +29,11 @@ function ProductList({ showFeaturedOnly = false }) {
             </div>
             {visibleProducts < filteredProducts.length && (
                 <button 
-                onClick={loadMoreProducts} 
-                className="bg-gold-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mt-4 mx-auto block transition duration-300 ease-in-out shadow hover:shadow-md"
-            >
-                Load More
-            </button>
-            
+                    onClick={loadMoreProducts} 
+                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mt-4 mx-auto block transition duration-300 ease-in-out shadow hover:shadow-md"
+                >
+                    Load More
+                </button>
             )}
         </div>
     );

@@ -21,7 +21,7 @@ function Navbar() {
         <div className={`flex-col md:flex-row md:flex ${isMenuOpen ? 'flex' : 'hidden'}`}>
           <Link to="/" className="text-deep-purple-800 hover:text-gray-300 px-3 py-2 rounded-md">Home</Link>
           <Link to="/products" className="text-deep-purple-800 hover:text-gray-300 px-3 py-2 rounded-md">Products</Link>
-          <Link to="/Products" className="text-deep-purple-800 hover:text-gray-300 px-3 py-2 rounded-md">New</Link>
+          <Link to="/newPage" className="text-deep-purple-800 hover:text-gray-300 px-3 py-2 rounded-md">New</Link>
           <Link to="/about" className="text-deep-purple-800 hover:text-gray-300 px-3 py-2 rounded-md">About</Link>
         </div>
       </div>

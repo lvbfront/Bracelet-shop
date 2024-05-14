@@ -16,6 +16,7 @@ export const products = [
         price: "$200.20",
         isFeatured: true,
         description: "varyyyyyyyyyy",
+        isNew: true,
         images: [
             {
                 id: "im1",
@@ -91,6 +92,7 @@ export const products = [
         name : "the logo",
         price : "$333",
         isFeatured: false,
+        isNew: true,
     },
     {
         id: 8,
@@ -104,7 +106,23 @@ export const products = [
         imgURL : customer2,
         name : "the logo",
         price : "$333",
+        isFeatured: false,
+    },
+    {
+        id: 10,
+        imgURL : 'https://source.unsplash.com/random/400x300?bracelet',
+        name : "the logo",
+        price : "$333",
         isFeatured: true,
+        
+    },
+    {
+        id: 11,
+        imgURL : 'https://source.unsplash.com/random/400x300?pen',
+        name : "the pen",
+        price : "$333",
+        isFeatured: true,
+
     }
 ];
 
