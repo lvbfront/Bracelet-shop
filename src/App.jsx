@@ -8,6 +8,7 @@ import ProductsPage from './pages/productsPage';
 import ScrollToTop from './components/ScrollToTop';
 import ProductDetailPage from './components/ProductDetailPage';
 import NewPage from './pages/newPage';
+import NecklacesPage from './pages/necklasePage';
 
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
   return (
 
     <>
-      <Navbar/>
+      <Navbar />
       <ScrollToTop/>
       <Routes>
         <Route index element={<Home />} />
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products/:productId" element={<ProductDetailPage />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/NecklacesPage" element={<NecklacesPage/>} />
       </Routes>
     </>
     

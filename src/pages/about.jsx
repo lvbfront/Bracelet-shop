@@ -1,4 +1,5 @@
 import React from 'react';
+import {neck} from '../components/assets/Data'
 
 export default function About() {
     return (
@@ -12,7 +13,7 @@ export default function About() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-10">
                     <div>
-                        <img src="https://source.unsplash.com/random/400x300?bracelet" alt="Showcase of bracelets" className="rounded-lg shadow-lg"/>
+                        <img src={neck} alt="Showcase of bracelets" className="rounded-lg shadow-lg size-80"/>
                     </div>
                     <div className="text-gray-600">
                         <h2 className="text-2xl text-deep-purple-800 font-semibold mb-3">Our Craftsmanship</h2>

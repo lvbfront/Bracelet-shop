@@ -1,28 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-/**
- * HeroSection displays two images with subtitles, each linking to a product detail page.
- * @param {Object} leftProduct - Contains imgSrc, subtitle, and link for the left product.
- * @param {Object} rightProduct - Contains imgSrc, subtitle, and link for the right product.
- */
 function NewHero({ leftProduct, rightProduct }) {
     return (
-        <div className="bg-gray-100 py-10">
-            <div className="container mx-auto px-4 flex justify-between items-center">
-                {/* Left Product */}
-                <div className="flex flex-col items-center w-1/2 px-2">
-                    <Link to={leftProduct.link}>
-                        <img src={leftProduct.imgSrc} alt={leftProduct.subtitle} className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"/>
-                        <h2 className="text-xl text-gray-800 font-bold mt-2">{leftProduct.subtitle}</h2>
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-50 to-#585858 lg:my-20 lg:mx-32 rounded-lg h-3/4 md:h-screen xs:mt-10">
+            {/* Main title for the section now within a normal flow above the images */}
+            <div className="w-full text-center text-black text-xl font-semibold mt-5 mb-10">
+                <p>إكتشف احدث الأساور</p>
+            </div>
+            <div className="flex flex-wrap justify-around items-center max-w-7xl w-full px-4">
+                {/* Left Product Card */}
+                <div className="group w-1/2 p-4 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-110">
+                    <Link to={leftProduct.link} className="flex flex-col items-center text-black">
+                        <div className="text-center mb-2">
+                            <span className="font-bold">{leftProduct.subtitle}</span>
+                        </div>
+                        <img src={leftProduct.imgSrc} alt={leftProduct.subtitle} className="rounded-lg shadow-lg w-full h-auto"/>
                     </Link>
                 </div>
 
-                {/* Right Product */}
-                <div className="flex flex-col items-center w-1/2 px-2">
-                    <Link to={rightProduct.link}>
-                        <img src={rightProduct.imgSrc} alt={rightProduct.subtitle} className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"/>
-                        <h2 className="text-xl text-gray-800 font-bold mt-2">{rightProduct.subtitle}</h2>
+                {/* Right Product Card */}
+                <div className="group w-1/2 p-4 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-110">
+                    <Link to={rightProduct.link} className="flex flex-col items-center text-black">
+                        <div className="text-center mb-2">
+                            <span className="font-bold">{rightProduct.subtitle}</span>
+                        </div>
+                        <img src={rightProduct.imgSrc} alt={rightProduct.subtitle} className="rounded-lg shadow-lg w-full h-auto"/>
                     </Link>
                 </div>
             </div>

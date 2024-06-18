@@ -22,7 +22,7 @@ function ProductList({ showFeaturedOnly = false, showNewOnly = false }) {
 
     return (
         <div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2">
                 {displayedProducts.map(product => (
                     <ProductItem key={product.id} product={product} />
                 ))}
@@ -30,9 +30,9 @@ function ProductList({ showFeaturedOnly = false, showNewOnly = false }) {
             {visibleProducts < filteredProducts.length && (
                 <button 
                     onClick={loadMoreProducts} 
-                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mt-4 mx-auto block transition duration-300 ease-in-out shadow hover:shadow-md"
+                    className="bg-silver-200 hover:bg-blue-600 text-black font-bold py-2 px-4 rounded-full mt-4 mx-auto block transition duration-300 ease-in-out shadow hover:shadow-md"
                 >
-                    Load More
+                    تحميل المزيد
                 </button>
             )}
         </div>

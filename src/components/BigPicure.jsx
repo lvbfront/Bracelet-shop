@@ -7,9 +7,10 @@ import React from 'react';
  */
 function BigPicture({ imgSrc, description }) {
     return (
-        <div className="container mx-auto px-4 my-8">
+        <div className="px-4 py-12 mx-auto max-w-7xl bg-gradient-to-t from-blue-50 to-slate-300 shadow-lg rounded-lg my-8">
             <div className="flex justify-center items-center flex-col">
-                <img src={imgSrc} alt={description} className="max-w-full h-auto shadow-lg rounded-lg"/>
+            <img src={imgSrc} alt={description} className="w-64 h-64 shadow-lg rounded-lg object-cover"/>
+
                 <p className="text-center text-lg text-gray-700 mt-4">{description}</p>
             </div>
         </div>

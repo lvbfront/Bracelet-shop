@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <footer className="bg-turquoise-200 text-white mt-8 py-6">
+        <footer className="bg-silver-200 text-white mt-8 py-6">
             <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
                 {/* Social Media Links */}
                 <div className="mb-6 md:mb-0">
