@@ -24,7 +24,7 @@ function Navbar() {
 
         <div className="relative md:hidden">
           <button className="fixed right-4 top-4 z-50 text-deep-purple-800" onClick={toggleMenu}>
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>

@@ -17,6 +17,18 @@ export default {
       '8xl': ['96px', '106px']
     },
     extend: {
+     
+      keyframes: {
+        fadein: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
+        }
+      },
+      animation: {
+        'fade-in-down': 'fadein 0.5s ease-out'
+      },
+
+      
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],

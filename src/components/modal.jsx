@@ -3,44 +3,30 @@ import React from 'react';
 const Modal = ({ isOpen, children, onClose }) => {
     if (!isOpen) return null;
 
-    // Function to stop the propagation of click events inside the modal content
-    const stopPropagation = (e) => {
-        e.stopPropagation();
+    // Prevent the modal from closing when clicking inside it
+    const handleModalContentClick = (event) => {
+        event.stopPropagation();
     };
 
     return (
-        <div onClick={onClose} style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: 1000
-        }}>
-            <div onClick={stopPropagation} style={{
-                position: 'relative',
-                padding: 20,
-                backgroundColor: '#fff',
-                borderRadius: 5,
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                maxWidth: '80%',
-                maxHeight: '80%',
-                overflow: 'auto'
-            }}>
+        <div 
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+            onClick={onClose}
+            aria-modal="true"
+            role="dialog"
+        >
+            <div 
+                className="bg-white rounded-lg shadow-lg max-w-md mx-auto my-4  overflow-auto"
+                onClick={handleModalContentClick}
+            >
                 {children}
-                <button onClick={onClose} style={{
-                    position: 'absolute',
-                    top: 10,
-                    right: 10,
-                    fontSize: 24,
-                    border: 'none',
-                    background: 'none',
-                    cursor: 'pointer'
-                }}>×</button>
+                <button 
+                    className="absolute top-0 right-0 p-2 text-3xl font-semibold text-gray-700 hover:text-gray-900"
+                    onClick={onClose}
+                    aria-label="Close"
+                >
+                    &times;
+                </button>
             </div>
         </div>
     );

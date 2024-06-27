@@ -2,17 +2,17 @@ import React from 'react';
 import NewHero from '../sections/newHero';
 import ProductList from '../components/ProductList';
 import Footer from '../components/footer';
-import Navbar from '../components/Navbar';
+import { neck, Logo } from '../components/assets/Data';
 function NewPage() {
 
     const leftProduct = {
-        imgSrc: "https://source.unsplash.com/random/400x300?bracelet",
+        imgSrc: neck,
         subtitle: "Elegant Gold Bracelet",
         link: "/products/10"
     };
 
     const rightProduct = {
-        imgSrc: "https://source.unsplash.com/random/400x300?pen",
+        imgSrc: Logo,
         subtitle: "Stylish Silver Bracelet",
         link: "/products/11"
     };

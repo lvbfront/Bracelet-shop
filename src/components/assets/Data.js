@@ -1,13 +1,15 @@
 import Logo from './logo.png'
 import ekka from './ekkako.png'
 import neck from './necklace.jpg'
+export const brac = '/images/Bracelets.jpg'; // Web path accessible from the public directory
 
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 export{
     Logo,
     ekka,
-    neck
+    neck,
+    
 }
 
 export const necklaces = [
@@ -16,7 +18,11 @@ export const necklaces = [
         name: 'Pearl Necklace',
         description: 'Elegant pearl necklace.',
         price: 99,
-        imageUrl: Logo  // replace 'Logo' with the actual path to the image
+        imageUrl: Logo,  // replace 'Logo' with the actual path to the image
+        images: [
+            {id:"im1", url: Logo,},
+            { id:"im2", url:ekka}
+        ]
     },
     {
         id: 2,
@@ -93,7 +99,22 @@ export const necklaces = [
         name: 'Citrine Minimalist Necklace',
         description: 'Minimalist design featuring a single citrine stone.',
         price: 70,
-        imageUrl: neck
+        imageUrl: neck,
+        images: [
+            {
+                id: "im1",
+                url: Logo,
+
+
+            },
+            {
+                id: "im2",
+                url: ekka,
+            }
+
+        ]
+
+        
     }
 ];
 
@@ -198,6 +219,27 @@ export const products = [
         name : "the logo",
         price : "$333",
         isFeatured: false,
+    },
+    {
+        id: 10,
+        imgURL : customer2,
+        name : "the logo",
+        price : "$333",
+        isFeatured: false, 
+    },
+    {
+        id: 11,
+        imgURL : customer2,
+        name : "the logo",
+        price : "$333",
+        isFeatured: false, 
+    },
+    {
+        id: 12,
+        imgURL : customer2,
+        name : "the logo",
+        price : "$333",
+        isFeatured: false, 
     },
 ];
 
