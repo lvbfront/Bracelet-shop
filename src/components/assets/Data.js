@@ -1,6 +1,7 @@
 import Logo from './logo.png'
 import ekka from './ekkako.png'
 import neck from './necklace.jpg'
+import ring from './ring.jpg'
 export const brac = '/images/Bracelets.jpg'; // Web path accessible from the public directory
 
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
@@ -9,6 +10,7 @@ export{
     Logo,
     ekka,
     neck,
+    ring
     
 }
 
