@@ -19,15 +19,18 @@ const slides = [
 function Home() {
   return (
     <div className='relative '>
-      <h1  className='text-red-500 content-center'>our collections</h1>
+      
       <section className='xl:px-20 lg:px-10 md:px-5 px-2 pt-10'> {/* Adjust padding and add enough padding-top */}
         <MultiHero/>
         
       </section>
-
-      <section className='w-full max-w-screen-lg mx-auto h-screen'>
+    {/*
+    
+    <section className='w-full max-w-screen-lg mx-auto h-screen'>
           <SlidePic slides={slides} />
-      </section>
+        </section>
+    */
+    }
 
 
 

@@ -9,6 +9,8 @@ import ScrollToTop from './components/ScrollToTop';
 import ProductDetailPage from './components/ProductDetailPage';
 import NewPage from './pages/newPage';
 import NecklacesPage from './pages/necklasePage';
+import RingsPage from './pages/ringsPage';
+import BraceletPage from './pages/braceletPage';
 
 
 export default function App() {
@@ -27,6 +29,8 @@ export default function App() {
         <Route path="/products/:productId" element={<ProductDetailPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/NecklacesPage" element={<NecklacesPage/>} />
+        <Route path="/RingsPage" element={<RingsPage/>} />
+        <Route path="/bracPage" element={<BraceletPage/>} />
       </Routes>
     </>
     

@@ -14,6 +14,193 @@ export{
     
 }
 
+export const braceletData = [
+    {
+        id: 1,
+        name: 'golden rings',
+        description: 'Elegant pearl necklace.',
+        price: 99,
+        imageUrl: neck,  // replace 'Logo' with the actual path to the image
+        images: [
+            {id:"im1", url: ring,},
+            { id:"im2", url:ekka},
+            {id:"im3", url:Logo}
+
+        ]
+    },
+    {
+        id: 2,
+        name: 'Silver Pendant',
+        description: 'Sterling silver pendant with a chain.',
+        price: 75,
+        imageUrl: ekka // replace 'ekka' with the actual path to the image
+    },
+    {
+        id: 3,
+        name: 'Gold Chain',
+        description: '24-karat gold chain, simple and luxurious.',
+        price: 200,
+        imageUrl: 'path/to/gold_chain.jpg'
+    },
+    {
+        id: 4,
+        name: 'Diamond Solitaire Necklace',
+        description: 'A stunning diamond solitaire on a delicate gold chain.',
+        price: 300,
+        imageUrl: 'path/to/diamond_necklace.jpg'
+    },
+    {
+        id: 5,
+        name: 'Sapphire Necklace',
+        description: 'Beautiful sapphire stones set in a sterling silver necklace.',
+        price: 150,
+        imageUrl: 'path/to/sapphire_necklace.jpg'
+    },
+    {
+        id: 6,
+        name: 'Ruby Heart Pendant',
+        description: 'Heart-shaped ruby pendant, perfect for gifting.',
+        price: 120,
+        imageUrl: 'path/to/ruby_heart.jpg'
+    },
+    {
+        id: 7,
+        name: 'Emerald Drop Necklace',
+        description: 'Elegant emerald stones arranged in a drop fashion on a fine chain.',
+        price: 175,
+        imageUrl: 'path/to/emerald_drop.jpg'
+    },
+    {
+        id: 8,
+        name: 'Turquoise Beaded Necklace',
+        description: 'Vibrant turquoise beads on a long, wrap-around chain.',
+        price: 90,
+        imageUrl: 'path/to/turquoise_beaded.jpg'
+    },
+    {
+        id: 9,
+        name: 'Black Onyx Necklace',
+        description: 'Bold black onyx beads with a silver clasp.',
+        price: 85,
+        imageUrl: 'path/to/black_onyx.jpg'
+    },
+    {
+        id: 10,
+        name: 'Layered Pearl Necklace',
+        description: 'Multi-layered pearls for a classic, elegant look.',
+        price: 130,
+        imageUrl: 'path/to/layered_pearl.jpg'
+    },
+]
+
+export const ringsData = [
+    {
+        id: 1,
+        name: 'golden rings',
+        description: 'Elegant pearl necklace.',
+        price: 99,
+        imageUrl: ring,  // replace 'Logo' with the actual path to the image
+        images: [
+            {id:"im1", url: ring,},
+            { id:"im2", url:ekka},
+            {id:"im3", url:Logo}
+
+        ]
+    },
+    {
+        id: 2,
+        name: 'Silver Pendant',
+        description: 'Sterling silver pendant with a chain.',
+        price: 75,
+        imageUrl: ekka // replace 'ekka' with the actual path to the image
+    },
+    {
+        id: 3,
+        name: 'Gold Chain',
+        description: '24-karat gold chain, simple and luxurious.',
+        price: 200,
+        imageUrl: 'path/to/gold_chain.jpg'
+    },
+    {
+        id: 4,
+        name: 'Diamond Solitaire Necklace',
+        description: 'A stunning diamond solitaire on a delicate gold chain.',
+        price: 300,
+        imageUrl: 'path/to/diamond_necklace.jpg'
+    },
+    {
+        id: 5,
+        name: 'Sapphire Necklace',
+        description: 'Beautiful sapphire stones set in a sterling silver necklace.',
+        price: 150,
+        imageUrl: 'path/to/sapphire_necklace.jpg'
+    },
+    {
+        id: 6,
+        name: 'Ruby Heart Pendant',
+        description: 'Heart-shaped ruby pendant, perfect for gifting.',
+        price: 120,
+        imageUrl: 'path/to/ruby_heart.jpg'
+    },
+    {
+        id: 7,
+        name: 'Emerald Drop Necklace',
+        description: 'Elegant emerald stones arranged in a drop fashion on a fine chain.',
+        price: 175,
+        imageUrl: 'path/to/emerald_drop.jpg'
+    },
+    {
+        id: 8,
+        name: 'Turquoise Beaded Necklace',
+        description: 'Vibrant turquoise beads on a long, wrap-around chain.',
+        price: 90,
+        imageUrl: 'path/to/turquoise_beaded.jpg'
+    },
+    {
+        id: 9,
+        name: 'Black Onyx Necklace',
+        description: 'Bold black onyx beads with a silver clasp.',
+        price: 85,
+        imageUrl: 'path/to/black_onyx.jpg'
+    },
+    {
+        id: 10,
+        name: 'Layered Pearl Necklace',
+        description: 'Multi-layered pearls for a classic, elegant look.',
+        price: 130,
+        imageUrl: 'path/to/layered_pearl.jpg'
+    },
+    {
+        id: 11,
+        name: 'Amethyst Pendant',
+        description: 'Purple amethyst pendant on a simple silver chain.',
+        price: 110,
+        imageUrl: 'path/to/amethyst_pendant.jpg'
+    },
+    {
+        id: 12,
+        name: 'Citrine Minimalist Necklace',
+        description: 'Minimalist design featuring a single citrine stone.',
+        price: 70,
+        imageUrl: neck,
+        images: [
+            {
+                id: "im1",
+                url: Logo,
+
+
+            },
+            {
+                id: "im2",
+                url: ekka,
+            }
+
+        ]
+
+        
+    }
+];
+
 export const necklaces = [
     {
         id: 1,
