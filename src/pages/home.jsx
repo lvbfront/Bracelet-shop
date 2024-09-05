@@ -1,52 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/footer';
-import Hero from '../sections/hero'; // Ensure correct casing if your file name is 'Hero'
-import ProductList from '../components/ProductList';
-import HeroT from '../sections/heroTry';
-import MultiHero from '../sections/multisecHero';
-import SlidePic from '../sections/slidePic';
+
+import ProductCard from '../components/ProductCard';
+import MultiHero from '../sections/multisecHero'
+import { products } from '../components/assets/Data';
 import { Logo, ekka, neck, brac } from '../components/assets/Data';
 
 
-const slides = [
-  { id: 1, image: neck, label: 'Necklaces', link: '/NecklacesPage' },
-  { id: 2, image: ekka, label: 'Rings', link: '/rings' },
-  { id: 3, image: Logo, label: 'Watches', link: '/products' },
-  { id: 4, image: brac, label: 'Bracelets', link: '/about' }
-];
-
 function Home() {
   return (
-    <div className='relative '>
+    <div className="relative bg-gray-100">
       
-      <section className='xl:px-20 lg:px-10 md:px-5 px-2 pt-10'> {/* Adjust padding and add enough padding-top */}
-        <MultiHero/>
-        
+
+      {/* Hero Section */}
+      <section className="xl:px-20 lg:px-10 md:px-5 px-2 pt-10 bg-white">
+        <MultiHero />
       </section>
-    {/*
-    
-    <section className='w-full max-w-screen-lg mx-auto h-screen'>
-          <SlidePic slides={slides} />
-        </section>
-    */
-    }
 
 
-
-      <section className='px-2 py-8 mt-8'> {/* Added margin-top for additional spacing */}
-        <div className='flex flex-col justify-start gap-5'>
-          <h2 className='text-4xl font-semibold'>
-            Our <span className='text-gray-400'>Popular</span> Products
+      {/* Popular Products Section */}
+      <section className="px-2 py-8 mt-8 bg-white">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-semibold">
+            Our <span className="text-gray-400">Popular</span> Products
           </h2>
-          <p className='lg:max-w-lg mt-2 text-gray-600'>
+          <p className="lg:max-w-lg mt-2 text-gray-600 mx-auto">
             Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value.
           </p>
         </div>
-        <ProductList />
+
+        {/* Product Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-6">
+          {products.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 }
