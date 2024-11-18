@@ -15,7 +15,7 @@ const MultiHero = () => {
     return (
         <>
             <div className='flex justify-center my-4'>
-                <h1 className='text-gray-700 text-2xl'>منتجاتنا</h1>
+                <h1 className='text-gray-700 text-2xl'>Our Products</h1>
             </div>
             
             <div className="grid grid-cols-4 gap-0 p-0 m-0 transition-all duration-500 ease-in-out" 

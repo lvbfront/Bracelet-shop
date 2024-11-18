@@ -40,7 +40,6 @@ function Navbar() {
           <button onClick={closeMenu} className="text-black mb-4">Close</button>
           <Link to="/" className="block hover:text-gray-300 py-2" onClick={closeMenu}>Home</Link>
           <Link to="/products" className="block hover:text-gray-300 py-2" onClick={closeMenu}>Products</Link>
-          <Link to="/newPage" className="block hover:text-gray-300 py-2" onClick={closeMenu}>New</Link>
           <Link to="/NecklacesPage" className="block hover:text-gray-300 py-2" onClick={closeMenu}>قلاداتnecklaces</Link>
           <Link to="/RingsPage" className="block hover:text-gray-300 py-2" onClick={closeMenu}>rings</Link>
           <Link to="/bracPage" className="block hover:text-gray-300 py-2" onClick={closeMenu}>bracelets</Link>
@@ -51,7 +50,6 @@ function Navbar() {
         <div className="hidden md:flex space-x-4 items-center">
           <Link to="/" className="hover:text-gray-300 px-3 py-2 rounded-md" onClick={closeMenu}>Home</Link>
           <Link to="/products" className="hover:text-gray-300 px-3 py-2 rounded-md" onClick={closeMenu}>Products</Link>
-          <Link to="/newPage" className="hover:text-gray-300 px-3 py-2 rounded-md" onClick={closeMenu}>New</Link>
           <Link to="/NecklacesPage" className="hover:text-gray-300 px-3 py-2 rounded-md" onClick={closeMenu}>necklaces</Link>
           <Link to="/RingsPage" className="hover:text-gray-300 px-3 py-2 rounded-md" onClick={closeMenu}>rings</Link>
           <Link to="/bracPage" className="hover:text-gray-300 px-3 py-2 rounded-md" onClick={closeMenu}>bracelets</Link>
